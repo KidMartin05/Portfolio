@@ -24,7 +24,7 @@ const Preview = () => {
       <section className="banner text-center">
         <div className="content">
           <h1>Tunis</h1>
-          <h2>Personal Portfolio React Template</h2>
+          <h2>Personal Portfolio React Template TEST</h2>
         </div>
       </section>
       {/* End .banner */}
