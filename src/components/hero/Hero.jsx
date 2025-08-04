@@ -10,8 +10,8 @@ const heroContent = {
   heroMobileImage: heroImgMobile,
   heroTitleName: "thomas martin",
   heroDesignation: "web developer",
-  heroDescriptions: `I'm a Tunisian based web designer & front‑end developer focused on
-  crafting clean & user‑friendly experiences, I am passionate about
+  heroDescriptions: `I'm a Florida-based full-stack engineer focused on
+  crafting clean & user‑friendly experiences, passionate about
   building excellent software that improves the lives of those
   around me.`,
   heroBtn: "more about me",
