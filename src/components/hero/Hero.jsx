@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import heroImg from "../../assets/img/hero/dark.jpg";
+import heroImg from "../../assets/img/hero/heroImg.jpg";
 import heroImgMobile from "../../assets/img/hero/img-mobile.jpg";
 import cancelImg from "../../assets/img/cancel.svg";
 import Index from "../../components/about/index";
@@ -10,7 +10,7 @@ const heroContent = {
   heroMobileImage: heroImgMobile,
   heroTitleName: "thomas martin",
   heroDesignation: "web developer",
-  heroDescriptions: `I'm a Florida-based full-stack engineer focused on
+  heroDescriptions: `I'm a Florida-based full-stack developer focused on
   crafting clean & user‑friendly experiences, passionate about
   building excellent software that improves the lives of those
   around me.`,
@@ -41,7 +41,7 @@ const Hero = () => {
               className="img-fluid main-img-mobile d-sm-block d-lg-none"
               alt="hero man"
             />
-            <h1 className="text-uppercase poppins-font">
+            <h1 className="hero-heading text-uppercase poppins-font">
               I'm {heroContent.heroTitleName}.
               <span>{heroContent.heroDesignation}</span>
             </h1>
