@@ -17,8 +17,7 @@ const educationContent = [
     year: "2023",
     degree: "HIGH SCHOOL DIPLOMA ",
     institute: "GATEWAY CHARTER HIGH SCHOOL",
-    details: `Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur
-        elit, sed do eiusmod tempor duntt`,
+    details: `Graduated third in class with a 5.77 weighted and a 3.81 unweighted GPA.`,
   },
 ];
 
