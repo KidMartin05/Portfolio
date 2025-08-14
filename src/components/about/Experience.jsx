@@ -2,25 +2,27 @@ import React from "react";
 
 const experienceContent = [
   {
-    year: "   2018 - Present",
-    position: " Web Developer",
-    compnayName: "Envato",
-    details: `  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-        adipisicing elit`,
+    year: "September 2023 - Present",
+    position: "Registered Pharmacy Technician",
+    compnayName: "Polaris Pharmacy Services",
+    details: `Dispensed prescriptions in a high-volume pharmacy using FrameworkRx, ensuring 
+    DEA compliance and quality patient care.`,
   },
   {
-    year: "2013 - 2018",
-    position: " UI/UX Designer",
-    compnayName: "Themeforest",
-    details: `Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol
-        elit, tempor incididunt`,
+    year: "August 2023 – Present",
+    position: "Web Developer Intern",
+    compnayName: "BluPoint Media, Inc.",
+    details: `Built responsive websites with HTML, CSS, JavaScript, and React, and supported 
+    backend development in Python and MySQL. Improved code quality and deployment speed through 
+    reviews, debugging, and Git workflows.`,
   },
   {
-    year: "2005 - 2013",
-    position: "Consultant",
-    compnayName: "Videohive",
-    details: `Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur
-        elit, sed do eiusmod tempor duntt`,
+    year: "August 2020 – August 2023",
+    position: "Registered Pharmacy Technician / Clerk",
+    compnayName: "Publix Supermarkets",
+    details: `Experienced in prescription processing, inventory management, and point-of-sale 
+    operations. Skilled in customer service, de-escalation, waste reduction, and maintaining 
+    transaction accuracy.`,
   },
 ];
 
