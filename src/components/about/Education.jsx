@@ -2,23 +2,21 @@ import React from "react";
 
 const educationContent = [
   {
-    year: "2015",
-    degree: "ENGINEERING DEGREE",
-    institute: "OXFORD UNIVERSITY",
-    details: `  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-        adipisicing elit`,
+    year: "EXPECTED FALL 2025",
+    degree: "BACHELOR'S OF SCIENCE (B.S.I.T) ",
+    institute: "UNIVERSITY OF SOUTH FLORIDA",
+    details: `Current Information Technology (IT) student with a 3.65 cumulative GPA.`,
   },
   {
-    year: "2012",
-    degree: "MASTER DEGREE",
-    institute: "KIEV UNIVERSITY",
-    details: `Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol
-        elit, tempor incididunt`,
+    year: "2020 - 2023",
+    degree: "PRE-NURSING (B.S.N.) ",
+    institute: "FLORIDA GULF COAST UNIVERSITY",
+    details: `Completed 2 years (4 semesters) of college, working towards an Bachelors in Nursing as a Dual Enrollment student.`,
   },
   {
-    year: "2009",
-    degree: "BACHELOR DEGREE ",
-    institute: "TUNIS HIGH SCHOOL",
+    year: "2023",
+    degree: "HIGH SCHOOL DIPLOMA ",
+    institute: "GATEWAY CHARTER HIGH SCHOOL",
     details: `Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur
         elit, sed do eiusmod tempor duntt`,
   },

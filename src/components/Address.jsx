@@ -5,8 +5,7 @@ const Address = () => {
     <>
       <p className="open-sans-font custom-span-contact position-relative">
         <i className="fa fa-map position-absolute"></i>
-        <span className="d-block">Address Point</span>123 Stree New York City ,
-        United States Of America 750065.
+        <span className="d-block">Address Point</span>Tampa, Florida, United States.
       </p>
       {/* End .custom-span-contact */}
 
@@ -20,7 +19,7 @@ const Address = () => {
       <p className="open-sans-font custom-span-contact position-relative">
         <i className="fa fa-phone-square position-absolute"></i>
         <span className="d-block">call me</span>{" "}
-        <a href="Tel: +216 21 184 010">+216 21 184 010</a>
+        <a href="Tel: +1 (239) 850-3750">+1 (239) 850-3750</a>
       </p>
       {/* End .custom-span-contact */}
     </>
