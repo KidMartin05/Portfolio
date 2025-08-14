@@ -3,11 +3,11 @@ body {
   font-family: raleway;
 }
 ::-moz-selection {
-  background-color: #cfa144 !important;
+  background-color: var(--main-primary-color) !important;
   color: #ffffff !important;
 }
 ::selection {
-  background-color: #cfa144 !important;
+  background-color: var(--main-primary-color) !important;
   color: #ffffff !important;
 }
 .demo-title {
@@ -67,7 +67,7 @@ body {
   padding: 3px 20px;
 }
 .demo .btn:hover {
-  background-color: #ffb400 !important;
+  background-color: var(--main-primary-color) !important;
 }
 .demo {
   padding: 175px 0 135px;
