@@ -4,7 +4,7 @@ import Education from "./Education";
 import Experience from "./Experience";
 import PersonalInfo from "./PersonalInfo";
 import Skills from "./Skills";
-import Resume from "../../assets/img/Resume_ThomasMartin.pdf";
+//import Resume from "../../assets/img/Resume_ThomasMartin.pdf";
 import heroImgMobile from "../../assets/img/hero/img-mobile.jpg";
 
 const index = () => {
@@ -38,7 +38,7 @@ const index = () => {
               {/* End personal info */}
 
               <div className="col-12 mt-1">
-                <a className="button" href={Resume} download>
+                <a className="button" href="/Resume_ThomasMartin.pdf" download="Resume_ThomasMartin.pdf">
                   <span className="button-text">Download Resume</span>
                   <span className="button-icon fa fa-download"></span>
                 </a>
