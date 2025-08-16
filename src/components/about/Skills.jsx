@@ -1,39 +1,44 @@
 import React from "react";
+import "../../assets/scss/main/_skills.scss"
 
 const skillsContent = [
-  { skillClass: "p25", skillPercent: "25", skillName: "PYTHON" },
-  { skillClass: "p89", skillPercent: "89", skillName: "C" },
-  { skillClass: "p70", skillPercent: "70", skillName: "RUST" },
-  { skillClass: "p66", skillPercent: "66", skillName: "HTML" },
-  { skillClass: "p95", skillPercent: "95", skillName: "CSS" },
-  { skillClass: "p50", skillPercent: "50", skillName: "MYSQL" },
-  { skillClass: "p65", skillPercent: "65", skillName: "SQL" },
-  { skillClass: "p45", skillPercent: "45", skillName: "POSTGRESQL" },
-  { skillClass: "p45", skillPercent: "45", skillName: "JAVASCRIPT" },
-  { skillClass: "p45", skillPercent: "45", skillName: "REACT" },
-  { skillClass: "p45", skillPercent: "45", skillName: "WORDPRESS" },
-  { skillClass: "p45", skillPercent: "45", skillName: "DEVOPS" },
-  // { skillClass: "p45", skillPercent: "45", skillName: "CI/CD" },
+  { skillName: "PYTHON",     logo: "/logos/python.png", scale: 2.1 },
+  { skillName: "C",          logo: "/logos/c.png", scale: 1 },
+  { skillName: "RUST",       logo: "/logos/rust.png", scale: 1.75 },
+  { skillName: "HTML5",      logo: "/logos/HTML5.png", scale: 1 },
+  { skillName: "CSS3",       logo: "/logos/CSS3.png", scale: 1  },
+  { skillName: "MYSQL",      logo: "/logos/MySQL.png", scale: 1 },
+  { skillName: "SQL",        logo: "/logos/SQL.png", scale: 1 },
+  { skillName: "POSTGRESQL", logo: "/logos/PostgreSQL.png", scale: 1 },
+  { skillName: "JAVASCRIPT", logo: "/logos/JavaScript.png", scale: 1.4 },
+  { skillName: "REACT",      logo: "/logos/React.png", scale: 1 },
+  { skillName: "WORDPRESS",  logo: "/logos/Wordpress.png", scale: 1 },
+  { skillName: "MONGODB",    logo: "/logos/mongodb.png", scale: 1 },
+  { skillName: "GIT",        logo: "/logos/Git.png", scale: 1.3 },
+  { skillName: "OOP",        logo: "/logos/OOP.png", scale: 1.25 },
+  { skillName: "DEVOPS",     logo: "/logos/DevOps.png", scale: 1 },
+  { skillClass: "p45", skillPercent: "45", skillName: "CI/CD" },
 ];
 
 const Skills = () => {
   return (
-    <>
-      {skillsContent.map((val, i) => (
-        <div className="col-6 col-md-3 mb-3 mb-sm-5" key={i}>
-          <div className={`c100 ${val.skillClass}`}>
-            <span>{val.skillPercent}%</span>
-            <div className="slice">
-              <div className="bar"></div>
-              <div className="fill"></div>
+      <>
+        {skillsContent.map((val, i) => (
+            <div className="col-6 col-md-3 mb-3 mb-sm-5" key={i}>
+              <div className="skill-card">
+                <div className="skill-card__logoWrap">
+                  <img
+                      className="skill-card__logo"
+                      src={val.logo}
+                      alt={val.skillName}
+                      style={{ transform: `scale(${val.scale ?? 1})` }} // per-item tweak
+                  />
+                </div>
+                <div className="skill-card__title">{val.skillName}</div>
+              </div>
             </div>
-          </div>
-          <h6 className="text-uppercase open-sans-font text-center mt-2 mt-sm-4">
-            {val.skillName}
-          </h6>
-        </div>
-      ))}
-    </>
+        ))}
+      </>
   );
 };
 

@@ -1,0 +1,60 @@
+/* Card container (dark panel with soft blue border) */
+.skill-card {
+  height: 190px;                      /* adjust to your layout */
+  background: #0f1116;                /* match your site’s dark background */
+  border-radius: 18px;
+  border: 2px solid rgba(30, 70, 189, 0.35); /* your theme blue (#1E46BD) */
+  box-shadow:
+          0 0 0 1px rgba(30,70,189,0.15) inset,
+          0 10px 20px rgba(0,0,0,0.35);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+  padding: 12px 12px;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+/* Hover polish */
+.skill-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(30, 70, 189, 0.65);
+  box-shadow:
+          0 0 0 2px rgba(30,70,189,0.35) inset,
+          0 14px 28px rgba(0,0,0,0.45),
+          0 0 18px rgba(30,70,189,0.25);
+}
+
+/* Logo wrapper to ensure consistent centering and prevent overflow */
+.skill-card__logoWrap {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+/* The logo itself */
+.skill-card__logo {
+  width: 130px;                 /* tweak per your logos */
+  height: 130px;
+  object-fit: contain;         /* preserves aspect ratio, no stretching */
+  display: block;
+  /* In case your source image has transparent checkerboard baked in,
+     the dark card background will show through cleanly. */
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.35));
+}
+
+/* Title text inside the card */
+.skill-card__title {
+  font-family: "Open Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #eaeef9;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-size: 26px;
+  margin-top: -4px;
+  text-align: center;
+  opacity: .95;
+}
+
+/* Optional: make the whole card clickable feel on hover */
+.skill-card { cursor: default; } /* or pointer if you link it */
