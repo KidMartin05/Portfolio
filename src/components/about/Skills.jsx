@@ -16,8 +16,8 @@ const skillsContent = [
   { skillName: "MONGODB",    logo: "/logos/mongodb.png", scale: 1 },
   { skillName: "GIT",        logo: "/logos/Git.png", scale: 1.3 },
   { skillName: "OOP",        logo: "/logos/OOP.png", scale: 1.25 },
-  { skillName: "DEVOPS",     logo: "/logos/DevOps.png", scale: 1 },
-  { skillClass: "p45", skillPercent: "45", skillName: "CI/CD" },
+  { skillName: "DEVOPS",     logo: "/logos/DevOps.png", scale: 1.4 },
+  { skillName: "CI/CD",      logo: "/logos/CICD.png", scale: 1 },
 ];
 
 const Skills = () => {

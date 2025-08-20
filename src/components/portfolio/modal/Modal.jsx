@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../../assets/img/portfolio/project-1.jpg";
+import img1 from "../../../assets/img/portfolio/project-1.png";
 import img2 from "../../../assets/img/portfolio/project-2.jpg";
 import portfolioVideo from "../../../assets/img/portfolio/video.mp4";
 import CloseImg from "../../../assets/img/cancel.svg";

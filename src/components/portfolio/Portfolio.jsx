@@ -18,10 +18,10 @@ const Portfolio = () => {
         <Tabs>
           <TabList className="portfolio-tab-list" data-aos="fade-up">
             <Tab>ALL</Tab>
-            <Tab>LOGO</Tab>
-            <Tab>VIDEO</Tab>
-            <Tab>GRAPHIC DESIGN</Tab>
-            <Tab>MOCKUP</Tab>
+            <Tab>APPLICATION</Tab>
+            {/*<Tab>VIDEO</Tab>*/}
+            {/*<Tab>GRAPHIC DESIGN</Tab>*/}
+            {/*<Tab>MOCKUP</Tab>*/}
           </TabList>
 
           <div className="container">
@@ -53,7 +53,7 @@ const Portfolio = () => {
 
             <TabPanel>
               <div className="tab-container">
-                {PortfolioData.filter((item) => item.tag.includes("logo")).map(
+                {PortfolioData.filter((item) => item.tag.includes("application")).map(
                   (item) => {
                     const { id, type, image, delayAnimation } = item;
                     return (
