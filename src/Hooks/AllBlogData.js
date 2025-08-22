@@ -1,109 +1,24 @@
 import { useState } from "react";
 import img1 from "../assets/img/blog/blog-post-1.jpg";
-import img2 from "../assets/img/blog/blog-post-2.jpg";
-import img3 from "../assets/img/blog/blog-post-3.jpg";
-import img4 from "../assets/img/blog/blog-post-4.jpg";
-import img5 from "../assets/img/blog/blog-post-5.jpg";
-import img6 from "../assets/img/blog/blog-post-6.jpg";
 
 const AllBlogData = () => {
   const blogsData = [
     {
       id: 1,
       img: img1,
-      title: "How to Own Your Audience by Creating an Email List",
+      title: "Taking Initiative - Creating a Website",
       commentor: "Thomas Martin ",
       date: "August 20th, 2025",
-      tag: `Photography, Coding, Business`,
+      tag: `Web Development, Coding, Business`,
       description1:
-        "Tomfoolery crikey bits and bobs brilliant bamboozled down the pub amongst brolly hanky panky, cack bonnet arse over tit burke bugger all mate bodge. cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Suspendisse interdum consectetur libero id faucibu nisl. Lacus vel facilisis volutpat est velit egestas.",
+        "When I decided to create my own website, I wasn’t chasing perfection. I wanted a clean place I owned—somewhere to publish work without asking an algorithm for permission. The hardest part wasn’t picking a stack; it was deciding to start and accepting that version one wouldn’t be the final word.",
       description2:
-        "Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights. ",
+        "Most developers struggle to see what’s interesting in the work they do every day. A small launch somewhere new is often exactly what the project needs, because shipping outside your comfort zone reliably pushes you to new creative heights. ",
       description3:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+        "I kept the first build deliberately small: a home page that explains who I help and how, a projects page that focuses on outcomes, and a simple contact path that respects people’s time. Keeping the surface area tight let me obsess over the essentials—fast loads, readable typography, and honest copy—rather than chasing every shiny component.",
       description4:
-        "Riosum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Under the hood, I chose tools I’ll actually maintain. Static pages for speed and reliability, a lightweight way to write posts, and a tiny serverless endpoint for forms. Accessibility wasn’t an afterthought; semantic HTML, clear focus states, and good contrast shipped in the first commit. The goal was a site that feels effortless to use, on any device, at any speed. \nWhat mattered most, though, was momentum. Each small improvement—an optimized image here, a clearer headline there—made the whole thing feel more like me. That’s the quiet payoff of taking initiative: you learn in public, adjust quickly, and the result is something you’re proud to point at when someone asks what you’ve been building.",
     },
-    // {
-    //   id: 2,
-    //   img: img2,
-    //   title: "Top 10 Toolkits for Deep Learning in 2022",
-    //   commentor: "Santhan ",
-    //   date: "14 January 2022",
-    //   tag: `wordpress, business, economy, design`,
-    //   description1:
-    //     "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    //   description2:
-    //     "If you’ve been waiting for an invitation, this calligraphy is it. Commissioned by Notebook hand-lettered design for a poster. Quote is Notebook Building 8 VP’s Regina Dugan—and mine. ",
-    //   description3:
-    //     "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-    //   description4:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    // },
-    // {
-    //   id: 3,
-    //   img: img3,
-    //   title: "Everything You Need to Know About Web Accessibility",
-    //   commentor: "steve ",
-    //   date: "9 January 2020",
-    //   tag: `wordpress, business, economy, design`,
-    //   description1:
-    //     "Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    //   description2:
-    //     "Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights. ",
-    //   description3:
-    //     "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-    //   description4:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    // },
-    // {
-    //   id: 4,
-    //   img: img4,
-    //   title: "How to Inject Humor & Comedy Into Your Brand",
-    //   commentor: "Beker ",
-    //   date: "15 March 2022",
-    //   tag: `wordpress, business, economy, design`,
-    //   description1:
-    //     "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Suspendisse interdum consectetur libero id faucibu nisl. Lacus vel facilisis volutpat est velit egestas",
-    //   description2:
-    //     "Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights. ",
-    //   description3:
-    //     "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-    //   description4:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    // },
-    // {
-    //   id: 5,
-    //   img: img5,
-    //   title: "Women in Web Design: How To Achieve Success",
-    //   commentor: "Janntul ",
-    //   date: "9 January 2021",
-    //   tag: `wordpress, business, economy, design`,
-    //   description1:
-    //     "Jorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    //   description2:
-    //     "Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights. ",
-    //   description3:
-    //     "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-    //   description4:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    // },
-    // {
-    //   id: 6,
-    //   img: img6,
-    //   title: "Evergreen versus topical content: An overview",
-    //   commentor: "Hasan ",
-    //   date: "9 January 2022",
-    //   tag: `wordpress, business, economy, design`,
-    //   description1:
-    //     "Still ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    //   description2:
-    //     "Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights. ",
-    //   description3:
-    //     "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-    //   description4:
-    //     "Still ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    // },
   ];
 
   const [singleData, setSingleData] = useState({});
