@@ -10,10 +10,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_fdv21tc", //"service_n4mkhz9",
-        "template_yhil5np", //"template_ugoztxr",
+          "service_5bhe4gj", //"service_fdv21tc", //"service_n4mkhz9",
+        "template_j6t2si9", //"template_yhil5np", //"template_ugoztxr",
         form.current,
-        "JfDjikVq8et_6nDR8"//"user_vYmDSd9PwIuRXUQEDjYwN"
+        "SFuBl_HpOVAhVOexK", //"JfDjikVq8et_6nDR8"//"user_vYmDSd9PwIuRXUQEDjYwN"
       )
       .then(
         (result) => {
@@ -29,7 +29,7 @@ const Contact = () => {
           document.getElementById("myForm").reset();
         },
         (error) => {
-          toast.error("Ops Message Not Sent!", {
+          toast.error("Oops, Message Not Sent!", {
             position: "top-right",
             autoClose: 2000,
             hideProgressBar: false,
